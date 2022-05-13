@@ -8,7 +8,7 @@ a:link {
 }
 
 a:visited {
-  color: sienna;
+  color: black;
   background-color: transparent;
   text-decoration: none;
 }
@@ -20,7 +20,7 @@ a:hover {
 }
 
 a:active {
-  color: sienna;
+  color: black;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -28,7 +28,7 @@ body {
   font-family: Georgia;
   padding: 10px;
   background: white;
-  color: sienna;
+  color: black;
 }
 div h2{
   font-size: 25px;
@@ -47,7 +47,7 @@ figure img.center{
 a.button {
   display: inline-block;
   border-radius: 4px;
-  background-color: sienna;
+  background-color: black;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -87,8 +87,8 @@ a.button:hover span:after {
 .header {
   padding: 30px;
   text-align: center;
-  background: yellowgreen;
-  color: white;
+  background: #FEDE00;
+  color: black;
   font-size: 20px;
 }
 
@@ -99,7 +99,7 @@ a.button:hover span:after {
 
 /* Add a card effect for articles */
 .card {
-  background-color: yellowgreen;
+  background-color: #FEDE00;
   padding: 30px;
   margin-top: 20px;
   width: 100%;
@@ -127,7 +127,7 @@ display: inline;
 
 #event1, #event2, #event3 {
   border-radius: 4px;
-  background-color: yellow;
+  background-color: #FEDE00;
   border: none;
   color: #000000;
   text-align: center;
@@ -143,14 +143,14 @@ display: inline;
   .navmenu
   {
     overflow: hidden;
-    background-color: #a4dd71;
+    background-color: #FEDE00;
   }
 
   .navmenu a
   {
     float: left;
     font-size: 18px;
-    color: #a0522d;
+    color: black;
     text-align: center;
     padding: 16px 16px;
     text-decoration: none;
@@ -167,7 +167,7 @@ display: inline;
     font-size: 18px; 
     border:none;
     outline: none;
-    color: #a0522d;
+    color: black;
     padding: 16px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -252,23 +252,24 @@ display: inline;
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
-  color: white; /* Text color */
+  background-color: transparent; /* Set a background color */
+  color: black; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
 }
 
 #topBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  color: #555; /* Add a dark-grey background on hover */
 }
 
 footer {
     background-color: #39B;
     color: #fff;
     text-align: center;
-    opacity: 0.70;
-    padding: 0.01em 16px;
+    padding: 16px;
     display: block;
+}
+
+#topBtn i{
+  font-size: 30px;
 }

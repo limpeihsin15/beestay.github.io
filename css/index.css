@@ -5,7 +5,7 @@ header{
  }
 
 .button{
-  background-color: sienna;
+  background-color: black;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -88,8 +88,8 @@ ul li{
 
 /* Caption text */
 .text {
-  background-color: #a4dd71;
-  color: sienna;
+  background-color: #FEDE00;
+  color: black;
   font-size: 17px;
   padding: 20px 12px;
   position: absolute;
@@ -115,7 +115,7 @@ ul li{
   top: 40%;
   width: 80%;
   font-size: 40px;
-  color: sienna;
+  color: black;
   font-weight: bolder;
   font-style: italic;
   text-align: center;
