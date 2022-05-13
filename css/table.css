@@ -1,0 +1,62 @@
+
+body{
+	font-family:  Georgia, Time New Roman, serif;
+	background-color: #9acd32;
+}
+
+h1,{
+	font-family: inherit;
+}
+
+table{
+	font-family: inherit;
+	border-collapse: collapse;
+	width: 100%;
+	padding: 2em;
+	margin: 1em auto; /* top/bottom right/left */
+}
+
+td, th{
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+th{
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #4CAF50;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+tr:nth-child(odd){
+	background-color: white;
+}
+
+
+tr:hover{
+	background-color: #ddd;
+}
+
+.new, a{
+  color: brown;
+  text-decoration: none;
+  padding: 12px;
+  text-align: center;
+}
+
+/* mouse over link */
+a:hover {
+  color: lightblue;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: red;
+  text-decoration: underline;
+}
