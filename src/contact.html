@@ -1,0 +1,229 @@
+<!DOCTYPE>
+<html lang = en>
+
+<head>
+	<title>Contact Us</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js\external.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<link rel="stylesheet" type="text/css" href="css/external.css">
+	<link rel="icon" type="image/ico" href="images/recycle_icon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- dropdown icon> -->
+
+	<style type="text/css">
+		
+		.help
+		{
+			/*The image used*/
+			background-image: url("images/contact.jpg");
+			background-size: 125%;
+			background-color: #cccccc;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin: 0 auto;
+			min-height: 600px;
+			padding: 0 auto;
+			position:relative;
+			opacity:0.8;
+			width: 100%;
+		}
+		
+		.help1 a
+		{
+			color: #FF8C00;
+			font-size:20px;
+			font-family:inherit;
+			text-decoration: underline;
+		}
+		.help1 a:hover
+		{
+			color: #000080;
+			text-decoration: none;
+		}
+		ul li
+		{
+			color: 
+		}
+
+		footer img
+		{
+			opacity: 1;
+		}
+	
+	</style>
+
+</head>
+<body>
+	<header>
+	  <!--Logo start here-->
+	    <div>
+	    	<a href="index.html"><img src="images/a click to recycle_transparent.png" alt="a click to recycle_transparent" id="logo" style="opacity: 1"></a>
+	  	</div>
+	<!-- Navbar on small screens -->
+	    <div class="navmenu" id="topnav">
+	        <a href="index.html">Home</a>
+
+	        <!--Trying to do dropdown menu for content-->
+	        <div class="dropdown">
+
+	          	<button class="dropbutton">Content
+	          	<i class="fa fa-caret-down"></i></button>
+
+	          	<div class="dropdown-content" id="topdrop">
+		            <a href="material.html">Materials Type</a>
+		            <a href="recyclingtips.html">Recycling Tips</a>
+		            <a href="companies.html">Company List</a>
+		            <a href="furtherinfo.html">Further Information</a>
+	          	</div>
+
+	        </div>
+
+	        <div class="dropdown">
+
+	          	<button class="dropbutton">Event
+	          	<i class="fa fa-caret-down"></i></button>
+
+	          	<div class="dropdown-content" id="topdrop2">
+	            	<a href="eventlist.html">Event List</a>
+	            	<a href="registerform.html">Register Here</a>
+	          	</div>
+
+	        </div>
+
+	        <a href="contact.html">Contact</a>
+	        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	      
+	    </div>
+	    <!--Navbar end here-->
+	</header>
+
+
+	<!--Title in the center-->
+	<div class="help">
+		<div class="caption">
+			<span class="border">DO YOU NEED HELP ?</span>
+
+			<div class="help1">
+				<h3>How can we help you?</h3>
+				<a href = "php/form_comment.php"><strong>Ask here!</strong></a>
+				<!--if the users click on this, it will straight away go question form-->
+
+				<br>
+
+				<h3>Where to send event enquiry?</h3>
+				<a href = "form_event.html"><strong>Send here!</strong></a>
+				<!--if the users click on this, it will straight away go event enquiry form-->
+
+				<br>
+
+				<h3>What can we improve?</h3>
+				<a href = "#feedback"><strong>Tell us!</strong></a>
+				<!--if the users click on this, it will straight away go feedback form-->
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--Feedback Form Start Here-->
+	<h3>Please give suggestion to help us improve!</h3>
+
+	<button class="open-button" onclick="openForm()" id="feedback">Feedback Form</button>
+		<div class="form-popup" id="myForm">
+			<form action="php/submitted_feedback.php" method="post" class="form-container" onsubmit ="alertMessage()">
+
+				<h2>Feedback Form</h2>
+
+				<p style="color: red">* Required Fields</p>
+				
+				<div>
+					<label for="firstname">First Name *</label>
+					<input type="text" id="name" name="feedback_fn" placeholder="Eg. Nicky" required>
+				</div>
+
+				<div>
+					<label for="lastname">Last Name *</label>
+					<input type="text" id="name" name="feedback_ln" placeholder="Eg. Wong" required>
+				</div>
+
+				<div>
+					<label for="email">Email *</label>
+					<input type="email" id="emial" name="feedback_email" placeholder="Eg. nickywong98@example.com" required>
+				</div>
+
+				<div>
+					<label for="feedback">Suggestion *</label>
+					<textarea id="feedback" name="feedback" placeholder="Enter your feedback here" required></textarea>
+				</div>
+
+				<div class="button">
+					<button type="submit" class="btn">Submit</button>
+					<button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+				</div>
+			</form>
+		</div>
+		<!--Feedback Form End Here-->
+
+	<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+
+</body>
+
+
+<!-- Footer -->
+<footer>
+<h3><a href="contact.html">Contact Us</a> to ask a question, provide feedback, or suggest event.</h3>
+      <div id="share-buttons">
+        <!-- Email -->
+        <a href="mailto:aclicktorecycle@gmail.com&amp;Subject=Enquiries&amp;Body=?>">
+        <img src="images/email.png" alt="Email" />
+        </a>
+ 
+        <!-- Facebook -->
+        <a href="http://www.facebook.com/aclicktorecycle" target="_blank">
+        <img src="images/facebook.png" alt="Facebook" />
+        </a>
+    
+        <!-- LinkedIn -->
+        <a href="http://www.linkedin.com/aclicktorecycle" target="_blank">
+        <img src="images/linkedin.png" alt="LinkedIn" />
+        </a>
+
+        <!-- Twitter -->
+        <a href="https://twitter.com/aclicktorecycle&amp;text=Paper%20and%20Plastic%20Conference&amp;hashtags=aclicktorecycle" target="_blank">
+        <img src="images/twitter.png" alt="Twitter" />
+        </a>
+        
+      </div>
+      <br>
+<small><i>Copyright &copy; 2019 Sunway University</i></small>
+
+</footer>
+<!--footer end here-->
+
+<!--Javascript start here-->
+<script>
+	
+	// sticky top navigation 
+	sticky();
+	//when click on the button, the form will popup
+	function openForm() 
+	{
+	  document.getElementById("myForm").style.display = "block";
+	}
+	//click on close button, the form will close
+	function closeForm() 
+	{
+	  document.getElementById("myForm").style.display = "none";
+	}
+	
+	//alert message after submitting form
+	function alertMessage() 
+	{
+	  alert("The form was submitted. \nThank you!");
+	}
+</script>
+
+</html>
