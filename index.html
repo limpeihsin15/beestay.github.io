@@ -5,64 +5,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"> <!--viewport according to sceen size of devices -->
 <script type="text/javascript" src="js/external.js"></script>
-<link rel="icon" href="images/beestay_icon.ico"> <!-- logo -->
+<link rel="icon" type="image/x-icon" href="images/beestay_icon.ico"> <!-- logo -->
 <link rel="stylesheet" type="text/css" href="css/external.css"> <!-- external css -->
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- dropdown icon> -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
 
-<div>
-	<a href="index.html"><img src="images/beestay_main_logo.jpg" alt="a click to recycle_transparent" id="logo"></a>
-</div>
-<!-- Navbar on small screens -->
-    <div class="navmenu" id="topnav">
-        <a href="index.html">Home</a>
-
-        <!--Trying to do dropdown menu for content-->
-        <div class="dropdown">
-
-          <button class="dropbutton">About Us
-          <i class="fa fa-caret-down"></i></button>
-
-          <div class="dropdown-content" id="topdrop">
-            <a href="material.html">Vision and Mission</a>
-            <a href="recyclingtips.html">Our Team</a>
-          </div>
-
-        </div>
-        <div class="dropdown">
-
-          <button class="dropbutton">Our Clients
-          <i class="fa fa-caret-down"></i></button>
-
-          <div class="dropdown-content" id="topdrop">
-            <a href="companies.html">List of projects</a>
-            <a href="furtherinfo.html">Client Reviews</a>
-          </div>
-
-        </div>
-        <div class="dropdown">
-
-          <button class="dropbutton">Vacancies
-          <i class="fa fa-caret-down"></i></button>
-
-          <div class="dropdown-content" id="topdrop2">
-            <a href="eventlist.html">Available positions</a>
-            <a href="registerform.html">Apply Here</a>
-          </div>
-
-        </div>
-
-        <a href="contact.html">Contact Us</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-      
-    </div>
-    <!--Navbar end here-->
+<div id="common-placeholder"></div>
 
 <div class="row">
 <div class="slidecol">
@@ -158,39 +110,11 @@
 </body>
 
 <!-- Footer -->
-<footer>
-<h3><a href="contact.html">Contact Us</a> </h3>
-      <div id="share-buttons">
-        <!-- Email -->
-        <a href="mailto:cs.beestay@gmail.com">
-        <img src="images/email.png" alt="Email" />
-        </a>
- 
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/BeeStayPropertyManagement/" target="_blank">
-        <img src="images/facebook.png" alt="Facebook" />
-        </a>
-    
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/beestaymanagement/" target="_blank">
-        <img src="images/instagram.png" alt="Instagram" />
-        </a>
+<footer id="footer-placeholder"></footer>
+<!-- Footer Ends Here -->
 
-        <!-- WhatsApp -->
-        <a href="https://api.whatsapp.com/send?phone=60175006578&app=facebook&entry_point=page_cta&fbclid=IwAR0KnF6VgB0hmE77oYpWTLt7fHt1foiXz5hmYa9tBfNVRDiY4pdwDnkgZII" target="_blank">
-        <img src="images/whatsapp.png" alt="Twitter" />
-        </a>
-        
-      </div>
-      <br>
-<small><i>Copyright &copy; 2022 Beestay Property Management Sdn Bhd</i></small>
-
-</footer>
-
-
+<script type="text/javascript"src="js/common.js"></script>
 <script type="text/javascript">
-
-sticky();
 
 //slideshow
 var slideIndex = 0;

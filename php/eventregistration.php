@@ -8,12 +8,12 @@ body {
   font-family: Georgia;
   padding: 10px;
   background: #f1f1f1;
-  color: sienna;
+  color: black;
 }
 a.button {
   display: inline-block;
   border-radius: 4px;
-  background-color: sienna;
+  background-color: black;
   border: none;
   color: #FFFFFF;
   text-align: center;
