@@ -42,31 +42,15 @@
 </div>
 </div>
 </div>
-<!--
-<div class="row">
-	<div class="col left">
-		<div class="card"> 
-			<h2>How can I recycle?</h2>
-			<ul>
-				<li>Sort Out The Trash Before Throwing</li>
-				<ol>
-					<li style="font-weight: normal;">Domestic Waste
-						<a href="recyclingtips.html#domesticwaste"><br><img src="images/domesticwaste.jpg" style="width: 200px"></a>
-					</li>
-					<li style="font-weight: normal;">Electric Waste <br>
-            <a href="recyclingtips.html#ewaste"><img src="images/ewaste.jpg"></a></li>
-					<li style="font-weight: normal;">Food Waste <br>
-            <a href="recyclingtips.html#foodwaste"><img src="images/foodwaste.jpg"></a></li>
-				</ol>
-        <br>
-				<li>Contact/Visit Recycling Facilities Near You <br>
-          <a href="recyclingtips.html#facility"><img src="images/facilitytip.jpg" style="width: 250px;height: 150px"></a></li>
-			</ul>
-      <button class="button" onclick="recyclingtipsFunction()">Read More</button>
-		</div> 
-	</div>
 
-	<div class="col right">
+<div class="row" id="company_overview">
+
+
+      <img src="images/beestay_demo1.jpg" style="width: 100%;opacity: 0.5;">
+
+
+
+	<!--<div class="col right">
 		<div class="card"> 
 			<h2>What can I recycle?</h2>
 			<ul class="materials">
@@ -102,9 +86,9 @@
       </ul>
       <button class="button" onclick="processFunction()">Read More</button>
     </div>
-  </div>
+  </div>-->
 </div>
--->
+
 <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 
 </body>
@@ -134,7 +118,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
 
 function materialFunction() {

@@ -98,47 +98,7 @@
 
 <body>
 	<header>
-	  <!--Logo start here-->
-	    <div>
-	    	<a href="../index.html"><img src="../images/a click to recycle_transparent.png" alt="a click to recycle_transparent" id="logo"></a>
-	<script type="text/javascript" src="js\external.js"></script>
-	  	</div>
-	<!-- Navbar on small screens -->
-	    <div class="navmenu" id="topnav">
-	        <a href="../index.html">Home</a>
-
-	        <!--Trying to do dropdown menu for content-->
-	        <div class="dropdown">
-
-	          	<button class="dropbutton">Content
-	          	<i class="fa fa-caret-down"></i></button>
-
-	          	<div class="dropdown-content" id="topdrop">
-		            <a href="../material.html">Materials Type</a>
-		            <a href="../recyclingtips.html">Recycling Tips</a>
-		            <a href="../companies.html">Company List</a>
-		            <a href="../furtherinfo.html">Further Information</a>
-	          	</div>
-
-	        </div>
-
-	        <div class="dropdown">
-
-	          	<button class="dropbutton">Event
-	          	<i class="fa fa-caret-down"></i></button>
-
-	          	<div class="dropdown-content" id="topdrop2">
-	            	<a href="../eventlist.html">Event List</a>
-	            	<a href="../registerform.html">Register Here</a>
-	          	</div>
-
-	        </div>
-
-	        <a href="../contact.html">Contact</a>
-	        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-	      
-	    </div>
-	    <!--Navbar end here-->
+	<div id="common-placeholder"></div>
 	</header>
 
 	
@@ -155,84 +115,9 @@
 
 
 <!-- Footer -->
-<footer>
-<h3><a href="contact.html">Contact Us</a> to ask a question, provide feedback, or suggest event.</h3>
-      <div id="share-buttons">
-        <!-- Email -->
-        <a href="mailto:aclicktorecycle@gmail.com&amp;Subject=Enquiries&amp;Body=?>">
-        <img src="images/email.png" alt="Email" />
-        </a>
- 
-        <!-- Facebook -->
-        <a href="http://www.facebook.com/aclicktorecycle" target="_blank">
-        <img src="images/facebook.png" alt="Facebook" />
-        </a>
-    
-        <!-- LinkedIn -->
-        <a href="http://www.linkedin.com/aclicktorecycle" target="_blank">
-        <img src="images/linkedin.png" alt="LinkedIn" />
-        </a>
+<footer id="footer-placeholder"></footer>
+<!-- Footer Ends Here -->
 
-        <!-- Twitter -->
-        <a href="https://twitter.com/aclicktorecycle&amp;text=Paper%20and%20Plastic%20Conference&amp;hashtags=aclicktorecycle" target="_blank">
-        <img src="images/twitter.png" alt="Twitter" />
-        </a>
-        
-      </div>
-      <br>
-<small><i>Copyright &copy; 2019 Sunway University</i></small>
-
-</footer>
-<!--footer end here-->
-	
-<script type="text/javascript">
-
-	// sticky top navigation 
-	window.onscroll = function() {myFunction()}; 
-	var topnav = document.getElementById("topnav");
-	var navdropdown = document.getElementById("topdrop");
-	var navdropdown2 = document.getElementById("topdrop2");
-
-	var sticky = topnav.offsetTop;
-
-	function myFunction() 
-	{
-	 	if (window.pageYOffset >= sticky) 
-	  	{
-	   		topnav.classList.add("sticky");
-	    	navdropdown.classList.add("dropdownsticky");
-	    	navdropdown2.classList.add("dropdownsticky");
-	  	} 
-	  	else 
-	  	{
-		    topnav.classList.remove("sticky");
-		    navdropdown.classList.remove("dropdownsticky");
-		    navdropdown2.classList.remove("dropdownsticky");
-	  	}
-	}
-
-	// When the user scrolls down 750px from the top of the document, show the button
-	window.onscroll = function() {scrollFunction()};
-
-	function scrollFunction() 
-	{
-	  if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) 
-	  {
-	    document.getElementById("topBtn").style.display = "block";
-	  } 
-	  else 
-	  {
-	    document.getElementById("topBtn").style.display = "none";
-	  }
-	}
-
-	// When the user clicks on the button, scroll to the top of the document
-	function topFunction() 
-	{
-	  document.body.scrollTop = 0; // For Safari
-	  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-	}
-
-</script>
+<script type="text/javascript"src="js/common.js"></script>
 
 </html>

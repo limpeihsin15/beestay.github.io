@@ -103,8 +103,7 @@ a.button:hover span:after {
   padding: 30px;
   margin-top: 20px;
   width: 100%;
-  border-radius: 15px;
-  box-shadow: 5px 5px #999
+
 }
 
 /* Clear floats after the columns */
@@ -263,8 +262,8 @@ display: inline;
 }
 
 footer {
-    background-color: #39B;
-    color: #fff;
+    background-color: #FEDE00;
+    color: black;
     text-align: center;
     padding: 16px;
     display: block;
