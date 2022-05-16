@@ -122,7 +122,7 @@
 				<li>Does recycling do more harm than good?</li>
 				<li>What happens when you put everything into one recycling bin?<br></li>
 				<li>Why recycle is important?<br></li>
-				<li>Where is the recycle company in Malaysia? <br><a href="../companies.html">Here are the companies list!</a></li>
+				<li>Where is the recycle company in Malaysia? <br><a href="../managingunits.html">Here are the companies list!</a></li>
 				<li>Are plastic bags recyclable? <br> <a href="../material.html">YES! Read more.</a></li>
 				<li>Can aluminum foil be recycled? <br> <a href="../material.html">YES! Read more</a></li>
 				<li>Is glass recyclable? <br> <a href="../material.html">YES! Read more</a></li>

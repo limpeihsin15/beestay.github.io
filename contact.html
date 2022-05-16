@@ -12,91 +12,41 @@
 	<link rel="icon" type="image/ico" href="images/beestay_icon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- dropdown icon> -->
 
-	<style type="text/css">
-		
-		.help
-		{
-			/*The image used*/
-			background-image: url("images/contact.jpg");
-			background-size: 125%;
-			background-color: #cccccc;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			margin: 0 auto;
-			min-height: 600px;
-			padding: 0 auto;
-			position:relative;
-			opacity:0.8;
-			width: 100%;
-		}
-		
-		.help1 a
-		{
-			color: #FF8C00;
-			font-size:20px;
-			font-family:inherit;
-			text-decoration: underline;
-		}
-		.help1 a:hover
-		{
-			color: #000080;
-			text-decoration: none;
-		}
-		ul li
-		{
-			color: 
-		}
-
-		footer img
-		{
-			opacity: 1;
-		}
-	
-	</style>
-
 </head>
 <body>
 	<header>
 		<div id="common-placeholder"></div>
 	</header>
+	<div id="contactus">
+		<h3 >Want to know more? Connect with us on our social media for faster reply</h3>
+		<!-- Email -->
+		<a href="mailto:cs.beestay@gmail.com">
+        <img src="images/email.png" alt="Email" />
+        </a>
+ 
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/BeeStayPropertyManagement/" target="_blank">
+        <img src="images/facebook.png" alt="Facebook" />
+        </a>
+    
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/beestaymanagement/" target="_blank">
+        <img src="images/instagram.png" alt="Instagram" />
+        </a>
 
-
-	<!--Title in the center-->
-	<div class="help">
-		<div class="caption">
-			<span class="border">DO YOU NEED HELP ?</span>
-
-			<div class="help1">
-				<h3>How can we help you?</h3>
-				<a href = "php/form_comment.php"><strong>Ask here!</strong></a>
-				<!--if the users click on this, it will straight away go question form-->
-
-				<br>
-
-				<h3>Where to send event enquiry?</h3>
-				<a href = "form_event.html"><strong>Send here!</strong></a>
-				<!--if the users click on this, it will straight away go event enquiry form-->
-
-				<br>
-
-				<h3>What can we improve?</h3>
-				<a href = "#feedback"><strong>Tell us!</strong></a>
-				<!--if the users click on this, it will straight away go feedback form-->
-			</div>
-		</div>
+        <!-- WhatsApp -->
+        <a href="https://api.whatsapp.com/send?phone=60175006578&app=facebook&entry_point=page_cta&fbclid=IwAR0KnF6VgB0hmE77oYpWTLt7fHt1foiXz5hmYa9tBfNVRDiY4pdwDnkgZII" target="_blank">
+        <img src="images/whatsapp.png" alt="Twitter" />
+        </a>
 	</div>
-
-
-
 	<!--Feedback Form Start Here-->
-	<h3>Please give suggestion to help us improve!</h3>
+	<h3>Or send us a message here! We will get back to you in 24 hours!</h3>
 
-	<button class="open-button" onclick="openForm()" id="feedback">Feedback Form</button>
+	<button class="open-button" onclick="openForm()" id="feedback">Send Message</button>
 		<div class="form-popup" id="myForm">
 			<form action="php/submitted_feedback.php" method="post" class="form-container" onsubmit ="alertMessage()">
 
-				<h2>Feedback Form</h2>
+				<h2>Enquiry Form</h2>
 
 				<p style="color: red">* Required Fields</p>
 				
@@ -122,7 +72,6 @@
 
 				<div class="button">
 					<button type="submit" class="btn">Submit</button>
-					<button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
 				</div>
 			</form>
 		</div>
@@ -143,7 +92,12 @@
 	//when click on the button, the form will popup
 	function openForm() 
 	{
-	  document.getElementById("myForm").style.display = "block";
+		if( document.getElementById("myForm").style.display == "block"){
+			closeForm();
+		} else{
+			document.getElementById("myForm").style.display = "block";
+		}
+	 
 	}
 	//click on close button, the form will close
 	function closeForm() 
@@ -156,6 +110,7 @@
 	{
 	  alert("The form was submitted. \nThank you!");
 	}
+
 </script>
 
 </html>

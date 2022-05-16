@@ -1,5 +1,6 @@
  * {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 a:link {
   color: green; 
@@ -95,7 +96,11 @@ a.button:hover span:after {
 .header h1 {
   font-size: 50px;
 }
-
+h1 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
+}
 
 /* Add a card effect for articles */
 .card {
@@ -123,7 +128,16 @@ border: 0;
 box-shadow: 0;
 display: inline;
 }
-
+#contactus {
+  display: inline;
+  text-align: center;
+}
+#contactus img {
+border: 0;
+display: inline;
+height: auto;
+width: 10%;
+}
 #event1, #event2, #event3 {
   border-radius: 4px;
   background-color: #FEDE00;
@@ -272,3 +286,48 @@ footer {
 #topBtn i{
   font-size: 30px;
 }
+.maintenance
+		{
+			background-size: 100%;
+			background-color: #cccccc;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin: 0 auto;
+			min-height: 300px;
+			padding: 30px;
+			position:relative;
+			opacity:0.8;
+			width: 100%;
+      text-align: center;
+      font-size: 40px;
+		}
+
+		.background-demo-image
+		{
+			/*The image used*/
+			background-image: url("../images/beestay_demo2.jpg");
+			background-size: 125%;
+			background-color: #cccccc;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin: 0 auto;
+			min-height: 600px;
+			padding: 0 auto;
+			position:relative;
+			opacity:0.5;
+			width: 100%;
+		}
+    	/*DO YOU NEED HELP?*/
+	.caption span.border 
+	{
+		color: black;
+		position:absolute;
+		padding: 10px;
+		font-family: inherit;
+		font-size: 30px;
+		letter-spacing: 10px;
+		transform: translate(-50%, -50%);
+    opacity:1;
+	}

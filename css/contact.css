@@ -3,13 +3,6 @@
 	  scroll-behavior: smooth;
 	}
 	
-	/*image*/
-	img
-	{
-		opacity:0.6;
-		height: auto;
-		width: 50%;
-	}
 	
 	
 	/*question, event, feedback*/
@@ -30,23 +23,8 @@
 		bottom:25%;
 		width: 100%;
 	}
-	
-	/*DO YOU NEED HELP?*/
-	.caption span.border 
-	{
-		color: #006400;
-		position:absolute;
-		padding: 10px;
-		font-family: inherit;
-		font-size: 30px;
-		letter-spacing: 10px;
-		transform: translate(-50%, -50%);
-	}
 
-	.help1 h3
-	{
-		color: #006400;
-	}
+
 
 	
 	form
@@ -82,15 +60,4 @@
 		text-align: center;
 	}
 
-	h4
-	{
-		font-size: 24px;
-		color: #7a4f30;
-		font-weight: 400;
-		margin: 16px;
-		display: block;
-		margin-right: 0.67em;
-		margin-left: 0.67em;
-		text-align: center;
-	}
 	

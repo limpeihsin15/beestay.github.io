@@ -20,7 +20,7 @@
     padding-bottom: 32px;
     margin: 10px 0;
   }
-}
+
 
 .clear
   {
@@ -28,9 +28,7 @@
     clear: both;
 }
 
-h1{
-  text-align: center;
-}
+
 
 .button{
   background-color: black;
