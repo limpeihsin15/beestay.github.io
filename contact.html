@@ -7,7 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="js\external.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/contact.css">
-	<link rel="stylesheet" type="text/css" href="css/form.css">
 	<link rel="stylesheet" type="text/css" href="css/external.css">
 	<link rel="icon" type="image/ico" href="images/beestay_icon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- dropdown icon> -->
@@ -18,64 +17,36 @@
 		<div id="common-placeholder"></div>
 	</header>
 	<div id="contactus">
-		<h3 >Want to know more? Connect with us on our social media for faster reply</h3>
-		<!-- Email -->
-		<a href="mailto:cs.beestay@gmail.com">
-        <img src="images/email.png" alt="Email" />
-        </a>
- 
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/BeeStayPropertyManagement/" target="_blank">
-        <img src="images/facebook.png" alt="Facebook" />
-        </a>
-    
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/beestaymanagement/" target="_blank">
-        <img src="images/instagram.png" alt="Instagram" />
-        </a>
-
-        <!-- WhatsApp -->
-        <a href="https://api.whatsapp.com/send?phone=60175006578&app=facebook&entry_point=page_cta&fbclid=IwAR0KnF6VgB0hmE77oYpWTLt7fHt1foiXz5hmYa9tBfNVRDiY4pdwDnkgZII" target="_blank">
-        <img src="images/whatsapp.png" alt="Twitter" />
-        </a>
-	</div>
-	<!--Feedback Form Start Here-->
-	<h3>Or send us a message here! We will get back to you in 24 hours!</h3>
-
-	<button class="open-button" onclick="openForm()" id="feedback">Send Message</button>
-		<div class="form-popup" id="myForm">
-			<form action="php/submitted_feedback.php" method="post" class="form-container" onsubmit ="alertMessage()">
-
-				<h2>Enquiry Form</h2>
-
-				<p style="color: red">* Required Fields</p>
-				
-				<div>
-					<label for="firstname">First Name *</label>
-					<input type="text" id="name" name="feedback_fn" placeholder="Eg. Nicky" required>
-				</div>
-
-				<div>
-					<label for="lastname">Last Name *</label>
-					<input type="text" id="name" name="feedback_ln" placeholder="Eg. Wong" required>
-				</div>
-
-				<div>
-					<label for="email">Email *</label>
-					<input type="email" id="emial" name="feedback_email" placeholder="Eg. nickywong98@example.com" required>
-				</div>
-
-				<div>
-					<label for="feedback">Suggestion *</label>
-					<textarea id="feedback" name="feedback" placeholder="Enter your feedback here" required></textarea>
-				</div>
-
-				<div class="button">
-					<button type="submit" class="btn">Submit</button>
-				</div>
-			</form>
+		<div id="contact-header" class="card">
+			<h1>Get in Touch</h1>
+			<h3>
+				Ready to embark on this exciting journey with us? <br> Whether you have questions, ideas, or dreams, we're here to turn them into reality.</h3>
 		</div>
-		<!--Feedback Form End Here-->
+		<div id="whatsapp-div" class="card"  title="Send us a WhatsApp">
+			<!-- WhatsApp -->
+			<a href="https://api.whatsapp.com/send?phone=60175006578&app=facebook&entry_point=page_cta&fbclid=IwAR0KnF6VgB0hmE77oYpWTLt7fHt1foiXz5hmYa9tBfNVRDiY4pdwDnkgZII" target="_blank">
+			<img src="images/whatsapp.png" alt="Twitter" />
+			</a>
+		</div>
+		<div id="facebook-div" class="card">
+			<!-- Facebook -->
+			<a href="https://www.facebook.com/BeeStayPropertyManagement/" target="_blank"  title="Visit our facebook">
+			<img src="images/facebook.png" alt="Facebook" />
+			</a>
+		</div>
+		<div id="insta-div" class="card">
+			<!-- Instagram -->
+			<a href="https://www.instagram.com/beestaymanagement/" target="_blank"  title="Follow us on Instagram!">
+			<img src="images/instagram.png" alt="Instagram" />
+			</a>
+		</div>
+		<div id="email-div" class="card">
+			<!-- Email -->
+			<a href="mailto:cs.beestay@gmail.com" title="Send us an email">
+			<img src="images/email.png" alt="Email" />
+			</a>
+		</div>
+	</div>
 
 	<button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 

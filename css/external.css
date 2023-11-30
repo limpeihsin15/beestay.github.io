@@ -2,6 +2,10 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+html 
+{
+  scroll-behavior: smooth;
+}
 a:link {
   color: green; 
   background-color: transparent; 
@@ -28,13 +32,78 @@ a:active {
 body {
   font-family: Georgia;
   padding: 10px;
-  background: white;
-  color: black;
+  background: black;
+  color: white;
+  line-height: 1.5;
+  font-size: 16px;
 }
+.content
+{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+.content-paragraph{
+  display: flex;
+  height:60vh;
+  min-height: 100%;
+  scroll-snap-align: center;
+}
+.content-paragraph p{
+  text-align: left;
+  display: flex;
+  animation: flyInFromBottom 3s;
+  position: relative;
+  vertical-align: middle;
+  margin: auto;
+  padding: 5px;
+}
+.content-paragraph h1{
+  font-size: 4rem;
+  background: linear-gradient(to right, rgb(67,124,205),rgb(69,214,202));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  position: relative;
+  margin: auto;
+}
+#intro-section.content-paragraph h1{
+  transform: rotate(-90deg);
+  animation: flyInFromTop 3s;
+}
+#vision-section.content-paragraph,#mision-section.content-paragraph{
+  flex-direction: column;
+}
+#vision-section.content-paragraph h1{
+  animation: flyInFromLeft 3s;
+}
+#vision-section.content-paragraph h1{
+  animation: flyInFromRight 3s;
+}
+@keyframes flyInFromLeft {
+  0%   {left:-200px; top:0px;}
+  25%  {left:0px; top:0px;}
+  }
+  @keyframes flyInFromRight {
+    0%   {left:200px; top:0px;}
+    25%  {left:0px; top:0px;}
+    }
+  @keyframes flyInFromTop {
+  0%  {left:0px; top:-200px;}
+  25%  {left:0px; top:0px;}
+  }
+  @keyframes flyInFromBottom {
+    0%  {left:0px; top:200px;}
+    25%  {left:0px; top:0px;}
+    }
 div h2{
   font-size: 25px;
   text-align: center;
-  color: green;
+  color: #FEDE00;
 }
 div h5{
   font-size: 15px;
@@ -128,16 +197,7 @@ border: 0;
 box-shadow: 0;
 display: inline;
 }
-#contactus {
-  display: inline;
-  text-align: center;
-}
-#contactus img {
-border: 0;
-display: inline;
-height: auto;
-width: 10%;
-}
+
 #event1, #event2, #event3 {
   border-radius: 4px;
   background-color: #FEDE00;
@@ -236,6 +296,10 @@ width: 10%;
     width: 30%;
     margin: 0 35%;
     padding-top: 0;
+    background-color: white;
+    border-radius: 50px;
+    border-color: #555;
+    margin-bottom: 10px;
   }
   
 .sticky{

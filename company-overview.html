@@ -6,7 +6,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript" src="js\external.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/material.css">
 	<link rel="stylesheet" type="text/css" href="css/external.css">
 	<link rel="icon" type="image/ico" href="images/beestay_icon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- dropdown icon> -->
@@ -25,11 +24,29 @@
 		</div>
 		
 		<!-- First Grid -->
-		<div >
-			<img src="images/company_overview.jpg" alt="company_overview" style="width:100%;">
-	
-		</div>
+		<section id="intro-section" class="content-paragraph">
+			<h1>Introduction</h1>
+			<p>Welcome to BeeStay, your lifetime property partner and a trailblazing force in innovative property management. We transcend the ordinary; we embody an energetic commitment to redefine the landscape of property services.<br><br>
+				At BeeStay, we pride ourselves on being your one-stop solution for property management. Whether it's marketing short-term rentals, facilitating long-term arrangements, or optimizing room rentals, we excel in crafting comprehensive solutions. Our journey is propelled by a dynamic team, unwavering expertise, and a passion for reshaping the traditional approach to property management.<br><br>
+				Discover a new era of property services with BeeStay - where innovation meets excellence, and every property is treated with a commitment to thriving success.</p>
+		</section>
 		<!--First Grid End-->
+		<!-- Second Grid -->
+		<section id="vision-section" class="content-paragraph">
+			<h1 id="vision-title">Our Vision</h1>
+			<p>“At BeeStay, our vision is simple yet profound: no room left vacant.
+				We’re on a mission to empower property owners, ensuring rental profitability while fostering vibrant communities. 
+				Our compass is set towards a future where every space finds purpose and every property owner unlocks the full potential of their investment.
+				Join us at BeeStay as we redefine real estate, one thriving community at a time.”</p>
+		</section>
+		<!--Second Grid End-->
+		<!-- Third Grid -->
+		<section id="mision-section" class="content-paragraph">
+			<h1>Our Mission</h1>
+			<p>“At  BeeStay , our mission is to transform the real estate landscape through a commitment to diversity, innovation, and community prosperity. We believe in the power of rental income to create market stability, foster economic growth, and elevate the overall well-being of neighborhoods. Our purpose is to actively manage properties to enhance their value, contributing to the visual and financial improvement of communities. We strive to be a catalyst for innovation in the property management industry, adapting to the dynamic needs of property owners and tenants. With a focus on risk mitigation, we empower property owners with diverse income streams and flexible housing solutions. Our dedication to fostering positive tenant-landlord relations and supporting local tourism aligns with our vision for a thriving, interconnected community. By encouraging sustainable practices, we aim to leave a lasting, positive impact on the industry we proudly shape. At BeeStay, we’re not just redefining propertymanagement; we’re building communities for a sustainable future.”</p>
+		</section>
+		<!--Third Grid End-->
+		<!--img src="images/company_overview.jpg" alt="company_overview" style="width:100%;"-->
 
 	</div>
 
@@ -45,7 +62,40 @@
 <script type="text/javascript"src="js/common.js"></script>
 
 <script type="text/javascript">
+	// get the element to animate
+	var element = document.getElementById('vision-title');
+	var elementHeight = element.clientHeight;
+	// listen for scroll event and call animate function
+	document.addEventListener('scroll', animate);
+
+	// check if element is in view
+	function inView() {
+	// get window height
+	var windowHeight = window.innerHeight;
+	// get number of pixels that the document is scrolled
+	var scrollY = window.scrollY || window.pageYOffset;
 	
+	// get current scroll position (distance from the top of the page to the bottom of the current viewport)
+	var scrollPosition = scrollY + windowHeight;
+	// get element position (distance from the top of the page to the bottom of the element)
+	var elementPosition = element.getBoundingClientRect().top + scrollY + elementHeight;
+	
+	// is scroll position greater than element position? (is element in view?)
+	if (scrollPosition > elementPosition) {
+		return true;
+	}
+	
+	return false;
+	}
+	// animate element when it is in view
+	function animate() {
+		// is element in view?
+		console.log(inView())
+		if (inView()) {
+			// element is in view, add class to element
+			element.classList.add('flyInFromLeft');
+		}
+	}
 	//Japan facts
 	// Get the fact
 	var fact = document.getElementById("japanfact");

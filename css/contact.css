@@ -1,8 +1,17 @@
-	html 
+
+
+	#contactus 
 	{
-	  scroll-behavior: smooth;
+		display: inline;
+		text-align: center;
+	  }
+	#contactus img 
+	{
+		border: 0;
+		display: inline;
+		height: auto;
+		width: 10%;
 	}
-	
 	
 	
 	/*question, event, feedback*/
@@ -55,9 +64,38 @@
 		text-align: center;
 	}
 	
-	h1,h3
+	#contact-header{
+		background-color: black;
+		color: white!important;
+	}
+	#contactus .card{
+		background-color: black;
+		color: white!important;
+	}
+	#contactus #email-div img,#contactus #facebook-div img{
+		animation: myrotate 5s infinite;
+	}
+	#contactus #insta-div img,#contactus #whatsapp-div img{
+		position: relative;
+		animation: myscale 5s infinite;
+	}
+	@keyframes myrotate {
+		25% {transform: rotate(360deg);}
+		50% {transform: rotate(360deg);}
+	  }
+	  @keyframes myscale {
+		50% {transform: scale(1.5);}
+	  }
+
+	#contactus h1
 	{
 		text-align: center;
+		font-size: 30px;
+	}
+	#contactus h3
+	{
+		text-align: center;
+		font-size: 20px;
 	}
 
 	
